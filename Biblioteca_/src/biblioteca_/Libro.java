@@ -12,6 +12,8 @@ public class Libro extends MaterialBiblioteca {
         this.numeroPaginas = numeroPaginas;
     }
 
+    // Método adicional
+    @Override
     public void mostrarDatos() {
         super.mostrarDatos();
         System.out.println("Genero: " + genero);
@@ -26,5 +28,11 @@ public class Libro extends MaterialBiblioteca {
         } else {
             System.out.println("El libro no está disponible.");
         }
+    }
+
+    // Método para renovar disponibilidad
+    @Override
+    public void renovarDisponibilidad() {
+        super.renovarDisponibilidad();
     }
 }

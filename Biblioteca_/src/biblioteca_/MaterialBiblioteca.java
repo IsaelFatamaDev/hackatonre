@@ -5,14 +5,14 @@ public class MaterialBiblioteca {
     // Atributos
     private String titulo;
     private String autor;
-    private int añoPublicacion;
+    private int anioPublicacion;
     private boolean disponible;
 
     // Constructor
-    public MaterialBiblioteca(String titulo, String autor, int añoPublicacion, boolean disponible) {
+    public MaterialBiblioteca(String titulo, String autor, int anioPublicacion, boolean disponible) {
         this.titulo = titulo;
         this.autor = autor;
-        this.añoPublicacion = añoPublicacion;
+        this.anioPublicacion = anioPublicacion;
         this.disponible = disponible;
     }
 
@@ -29,7 +29,7 @@ public class MaterialBiblioteca {
     public void mostrarDatos() {
         System.out.println("Titulo: " + titulo);
         System.out.println("Autor: " + autor);
-        System.out.println("Año de publicación: " + añoPublicacion);
+        System.out.println("Año de publicación: " + anioPublicacion);
         System.out.println("Disponible: " + (disponible ? "Sí" : "No"));
     }
 
@@ -43,4 +43,9 @@ public class MaterialBiblioteca {
         this.disponible = disponibilidad;
     }
 
+    // (Renovar disponibilidad)
+    public void renovarDisponibilidad() {
+        this.disponible = true;
+        System.out.println("La disponibilidad ha sido renovada.");
+    }
 }
